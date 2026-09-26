@@ -1,0 +1,604 @@
+/* Hero banner alignment for the 1920px Figma frame. */
+@media (min-width: 1200px) {
+  .hero {
+    height: auto;
+    min-height: 0;
+    aspect-ratio: 2880 / 1053;
+    margin-bottom: -103px;
+    background: #fbf4f1;
+  }
+
+  .hero-image {
+    background-image: url("assets/hero.png");
+    background-position: right center;
+    background-size: 103% auto;
+    background-repeat: no-repeat;
+  }
+
+  .hero-image:after {
+    display: none;
+  }
+
+  .hero-copy {
+    position: absolute;
+    top: 141px;
+    left: 50%;
+    width: 844px;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 2;
+  }
+
+  .hero .eyebrow {
+    position: absolute;
+    top: -34px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: #92535d;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0;
+  }
+
+  .hero h1 {
+    width: 100%;
+    margin: 0;
+    color: #270304;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 130px;
+    font-weight: 500;
+    line-height: 115px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .hero h1 em {
+    color: transparent;
+    background: linear-gradient(90deg, #af666f, #d08d95);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  .hero-copy > p:not(.eyebrow) {
+    position: absolute;
+    top: 251px;
+    left: 50%;
+    width: 700px;
+    max-width: none;
+    margin: 0;
+    color: #3f3534;
+    font-size: 18px;
+    line-height: 1.55;
+    text-align: center;
+    transform: translateX(-50%);
+  }
+
+  .hero .text-link {
+    position: absolute;
+    top: auto;
+    bottom: 115px;
+    left: 50%;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: rgba(39, 3, 4, .72);
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1;
+    transform: translateX(-50%);
+  }
+}
+
+.hero .scroll-cue {
+  position: relative;
+  display: block;
+  width: 22px;
+  height: 19px;
+  animation: scroll-cue-blink 1.6s ease-in-out infinite;
+}
+
+.hero .scroll-cue::before,
+.hero .scroll-cue::after {
+  position: absolute;
+  left: 7px;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.hero .scroll-cue::before {
+  top: 0;
+}
+
+.hero .scroll-cue::after {
+  top: 6px;
+}
+
+@keyframes scroll-cue-blink {
+  0%, 100% { opacity: .65; }
+  50% { opacity: .28; }
+}
+
+.hero h1 {
+  color: #270304;
+  font-size: 85px;
+  line-height: 1;
+  position: relative;
+  top: -10px;
+  left: 0;
+}
+
+.quote-card {
+  position: relative;
+  display: block;
+  width: min(1562px, 90%);
+  min-height: 0;
+  aspect-ratio: 1562 / 560;
+  margin: -54px auto 70px;
+  overflow: hidden;
+  border-radius: 40px;
+  background-color: transparent;
+  background-image: url("assets/quote-card-background.png");
+  background-position: center 73.4%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 9px 80.2px #e1c2b1;
+}
+
+.quote-card .quote-copy {
+  position: absolute;
+  top: 8.75%;
+  left: 6.85%;
+  width: 39.63%;
+  max-width: none;
+  padding: 0;
+  transform: none;
+}
+
+.quote-card .quote-copy h2 {
+  margin: 0;
+  color: #1b1515;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: clamp(36px, 3.125vw, 60px);
+  font-weight: 700;
+  line-height: 1.4167;
+}
+
+.quote-card .quote-copy h2 span {
+  color: #bd757f;
+}
+
+.quote-card .quote-description {
+  max-width: none;
+  margin: 0;
+  color: #1b1515;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: clamp(22px, 1.823vw, 35px);
+  font-weight: 400;
+  line-height: 1.1429;
+}
+
+.quote-card .benefit-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.615vw;
+  width: 25.208vw;
+  max-width: 100%;
+  margin: 2.083vw 0 0;
+}
+
+.quote-card .quote-benefit {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.573vw;
+}
+
+.quote-card .quote-benefit:nth-of-type(1) {
+  width: 6.927vw;
+}
+
+.quote-card .quote-benefit:nth-of-type(2) {
+  width: 5.104vw;
+}
+
+.quote-card .quote-benefit:nth-of-type(3) {
+  width: 6.719vw;
+}
+
+.quote-card .quote-benefit-icon {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: clamp(50px, 3.744vw, 71.879px);
+  height: clamp(50px, 3.744vw, 71.879px);
+}
+
+.quote-card .quote-benefit-icon > img:first-child {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.quote-card .quote-benefit-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: clamp(30px, 2.292vw, 44px);
+  height: clamp(30px, 2.292vw, 44px);
+  transform: translate(-50%, -50%);
+}
+
+.quote-card .quote-benefit-symbol.quote-clock {
+  width: clamp(28px, 2.083vw, 40px);
+  height: clamp(28px, 2.083vw, 40px);
+}
+
+.quote-card .quote-benefit-label {
+  display: block;
+  width: 100%;
+  color: #111;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: clamp(17px, 1.302vw, 25px);
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.quote-card .quote-benefit-divider {
+  display: flex;
+  flex: 0 0 0;
+  align-items: center;
+  justify-content: center;
+  width: 0;
+  height: clamp(68px, 5.677vw, 109px);
+}
+
+.quote-card .quote-benefit-divider img {
+  display: block;
+  width: clamp(68px, 5.677vw, 109px);
+  height: 1px;
+  transform: rotate(90deg);
+}
+
+.quote-card .quote-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min(22.2426vw, 427.058px);
+  height: clamp(52px, 3.533vw, 67.836px);
+  margin-top: 2.083vw;
+  border-radius: 45.481px;
+  background: linear-gradient(90deg, #b46974, #cf899e);
+  box-shadow: inset 0 3.083px 6.9px #f1bcc4;
+  color: #fff;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: clamp(22px, 1.606vw, 30.835px);
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  transition: transform 180ms ease, filter 180ms ease, box-shadow 180ms ease;
+}
+
+.quote-card .quote-form-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(.96);
+  box-shadow: inset 0 3.083px 6.9px #f1bcc4, 0 8px 18px rgba(125, 63, 76, .2);
+}
+
+.quote-card .quote-form-button:active {
+  transform: translateY(0);
+}
+
+.quote-card .quote-form-button:focus-visible {
+  outline: 3px solid rgba(125, 63, 76, .55);
+  outline-offset: 4px;
+}
+
+@media (max-width: 900px) {
+  .quote-card {
+    width: calc(100% - 32px);
+    min-height: 620px;
+    aspect-ratio: auto;
+    background-size: auto 100%;
+    background-position: right center;
+  }
+
+  .quote-card .quote-copy {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: auto;
+    padding: 32px 24px;
+  }
+
+  .quote-card .quote-copy h2 {
+    font-size: clamp(36px, 8vw, 52px);
+    line-height: 1.2;
+  }
+
+  .quote-card .quote-description {
+    font-size: clamp(22px, 5vw, 30px);
+    line-height: 1.3;
+  }
+
+  .quote-card .benefit-row {
+    width: 100%;
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .quote-card .quote-benefit:nth-of-type(1),
+  .quote-card .quote-benefit:nth-of-type(2),
+  .quote-card .quote-benefit:nth-of-type(3) {
+    width: auto;
+    flex: 1 1 0;
+  }
+
+  .quote-card .quote-benefit-divider {
+    display: none;
+  }
+
+  .quote-card .quote-benefit-label {
+    font-size: clamp(15px, 3.9vw, 22px);
+    white-space: normal;
+  }
+
+  .quote-card .quote-form-button {
+    width: min(100%, 427px);
+    height: 56px;
+    margin-top: 24px;
+    font-size: 24px;
+  }
+
+  .hero .text-link {
+    position: relative;
+    top: auto;
+    left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    width: max-content;
+    margin: 40px auto 0;
+    padding: 0;
+    border: 0;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 17px;
+    line-height: 1;
+    transform: none;
+  }
+
+  .hero-copy {
+    padding-top: 254px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-copy {
+    padding-top: 269px;
+  }
+}
+
+.features .feature-card {
+  background-color: #171313;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.features .feature-d {
+  background-image: url("assets/feature-04.png");
+}
+
+.features .feature-card span.feature-icon {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .features .feature-a {
+    background-position: right center;
+    background-size: 106.2% auto;
+  }
+
+  .features .feature-c {
+    background-position: right center;
+    background-size: 115.6% auto;
+  }
+}
+
+.expert {
+  position: relative;
+  display: block;
+  height: auto;
+  min-height: 0;
+  margin-top: 0;
+  background: none;
+}
+
+.expert-banner-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.expert-phone-button {
+  position: absolute;
+  top: 70%;
+  left: 63.6979%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: clamp(180px, 13.177vw, 253px);
+  height: clamp(44px, 2.969vw, 57px);
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #c4808b 0%, #af6b75 56.7%, #a25e67 100%);
+  color: #fff;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: clamp(20px, 1.5625vw, 30px);
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.expert-phone-button img {
+  display: block;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.expert-phone-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(.96);
+  box-shadow: 0 7px 16px rgba(42, 19, 22, .2);
+}
+
+.expert-phone-button:focus-visible {
+  outline: 3px solid rgba(255, 255, 255, .8);
+  outline-offset: 3px;
+}
+
+@media (max-width: 900px) {
+  .expert-phone-button {
+    top: auto;
+    right: 16px;
+    bottom: 12px;
+    left: auto;
+    width: min(230px, calc(100% - 32px));
+    height: 48px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .features.section {
+    height: auto;
+    min-height: 0;
+    padding: 48px 24px 56px;
+    background: #f5ebe6;
+  }
+
+  .features .section-heading {
+    width: min(100%, 760px);
+    margin: 0 auto 32px;
+  }
+
+  .features .section-kicker {
+    margin: 0;
+    color: #251d1d;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: clamp(36px, 6vw, 52px);
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .features .section-heading h2 {
+    display: none;
+  }
+
+  .features .section-heading > p:last-child {
+    margin: -6px 0 0;
+    color: #251d1d;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: clamp(17px, 2.4vw, 22px);
+    line-height: 1.3;
+    text-align: center;
+  }
+
+  .feature-grid {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, minmax(220px, auto));
+    gap: 16px;
+  }
+
+  .feature-card,
+  .feature-large {
+    display: flex;
+    min-height: 220px;
+    padding: 92px 22px 20px;
+    border-radius: 18px;
+  }
+
+  .feature-card span {
+    top: 22px;
+    left: 22px;
+    width: 42px;
+    height: 42px;
+    border: 0;
+    border-radius: 50%;
+    background: #e9e1cc;
+    color: #60491f;
+  }
+
+  .feature-card .feature-icon img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .feature-card h3 {
+    margin: 0 0 5px;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: clamp(24px, 4vw, 32px);
+    line-height: 1.15;
+  }
+
+  .feature-card p {
+    max-width: 300px;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: clamp(16px, 2.7vw, 20px);
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 560px) {
+  .features.section {
+    padding: 40px 18px 48px;
+  }
+
+  .features .section-kicker {
+    font-size: 36px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    grid-auto-rows: 240px;
+    gap: 14px;
+  }
+}

@@ -1,0 +1,157 @@
+/* Desktop layout aligned to the 1920px Figma frame. */
+@media (min-width: 1200px) {
+  .expert {
+    height: 580px;
+    min-height: 580px;
+    margin-top: 259px;
+    grid-template-columns: 1fr 1fr;
+    background: url("assets/expert.png") center center / cover no-repeat;
+  }
+
+  .expert-photo {
+    min-height: 0;
+    background: none;
+  }
+
+  .expert-copy {
+    padding: 90px 9%;
+    background: linear-gradient(90deg, #b96f7a 0%, #92535d 38%, #92535d 100%);
+  }
+
+  .features.section {
+    height: 957px;
+    padding: 54px 0 98px;
+    background: #f5ebe6;
+  }
+
+  .features .section-heading {
+    max-width: 1054px;
+    margin: 0 auto 63px;
+  }
+
+  .features .section-kicker {
+    margin: 0;
+    color: var(--ink);
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 85px;
+  }
+
+  .features .section-heading h2 {
+    display: none;
+  }
+
+  .features .section-heading > p:last-child {
+    margin: 0;
+    color: #251d1d;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .feature-grid {
+    width: 1388px;
+    max-width: none;
+    height: 621px;
+    margin: 0 0 0 calc((100% - 1388px) / 2 + 13px);
+    grid-template-columns: repeat(2, 694px);
+    grid-template-rows: repeat(2, 297px);
+    gap: 27px 0;
+  }
+
+  .feature-card,
+  .feature-large {
+    grid-row: auto;
+    min-height: 297px;
+    padding: 104px 20px 24px;
+    border-radius: 23px;
+    justify-content: flex-start;
+    background-size: cover;
+  }
+
+  .feature-card:before {
+    background: linear-gradient(90deg, rgba(40, 18, 20, .78), rgba(40, 18, 20, .42) 38%, transparent 76%);
+  }
+
+  .feature-a:before {
+    background: linear-gradient(90deg, rgba(137, 84, 87, .88), rgba(137, 84, 87, .55) 38%, transparent 76%);
+  }
+
+  .feature-card span {
+    top: 34px;
+    left: 20px;
+    width: 52px;
+    height: 52px;
+    padding: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .feature-card h3 {
+    margin: 17px 0 5px;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 41px;
+    line-height: 1.15;
+  }
+
+  .feature-card p {
+    margin: 0;
+    max-width: 300px;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 23px;
+    line-height: 1.2;
+  }
+
+  .feature-d {
+    display: flex;
+    background-image: url("assets/feature-04.png");
+  }
+
+  .fleet {
+    height: 837px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .fleet:before {
+    background: linear-gradient(
+      180deg,
+      #a45f69 0%,
+      #a45f69 53%,
+      rgba(164, 95, 105, .72) 58%,
+      transparent 64%,
+      rgba(28, 14, 15, .28) 100%
+    );
+  }
+
+  .fleet-overlay {
+    z-index: 1;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 64px 40px 0;
+  }
+
+  .fleet-overlay .section-kicker {
+    margin-bottom: 8px;
+    color: #fff;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 50px;
+    line-height: 1.15;
+  }
+
+  .fleet h2 {
+    margin: 0;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 70px;
+    line-height: 1.15;
+  }
+
+  .fleet-overlay > p:last-child {
+    margin: 8px 0 0;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 32px;
+    line-height: 1.25;
+  }
+}

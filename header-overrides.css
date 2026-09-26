@@ -1,0 +1,266 @@
+/* Header rebuilt from Figma nodes 308:1214–1222. */
+.site-header {
+  height: 72px;
+  padding: 0 clamp(24px, 4.583333vw, 88px);
+  gap: 0;
+  background: #66313a;
+  border: 0;
+  position: relative;
+  backdrop-filter: none
+}
+
+.site-header .brand {
+  display: flex;
+  align-items: center;
+  flex: 0 0 128px;
+  width: 128px;
+  height: 67px;
+  overflow: visible;
+  letter-spacing: normal
+}
+
+.site-header .brand img {
+  display: block;
+  width: auto;
+  height: 70px;
+  max-height: 70px;
+  position: static;
+  object-fit: contain
+}
+
+.site-header .header-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: absolute;
+  left: 50%;
+  margin-left: 0;
+  transform: translate(-50%, 4px);
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: 30px;
+  line-height: normal;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #fff
+}
+
+.site-header .header-nav a {
+  transition: opacity .2s
+}
+
+.site-header .header-nav a:hover {
+  color: #fff;
+  opacity: .78
+}
+
+.site-header .header-line {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin-left: clamp(60px, 9.21875vw, 177px);
+  transform: translateY(4px);
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: 22px;
+  line-height: 1;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap
+}
+
+.site-header .header-line span {
+  font-weight: 400
+}
+
+.site-header .header-cta {
+  box-sizing: border-box;
+  height: 40px;
+  width: 170px;
+  flex: 0 0 170px;
+  margin-left: 25px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  background: linear-gradient(to left, #a25e67 10.714%, #af6b75 43.296%, #c4808b 94.643%);
+  box-shadow: none;
+  font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 500;
+  white-space: nowrap
+}
+
+.site-header .header-cta img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px
+}
+
+.site-header .header-cta span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  line-height: 1;
+  font-weight: 500;
+  transform: translateY(2px)
+}
+
+@media(min-width:1281px) {
+  .site-header .header-line {
+    position: absolute;
+    top: 50%;
+    right: 243px;
+    margin-left: 0;
+    transform: translateY(calc(-50% + 4px))
+  }
+
+  .site-header .header-cta {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+    margin-left: 0;
+    transform: translateY(-50%)
+  }
+}
+
+.site-header .header-menu-toggle,
+.site-header .header-menu-label {
+  display: none
+}
+
+@media(max-width:1280px) {
+  .site-header .header-line {
+    display: none
+  }
+
+  .site-header .header-menu-toggle {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    clip-path: inset(50%);
+    display: block
+  }
+
+  .site-header .header-menu-label {
+    display: block;
+    margin-left: auto;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, .55);
+    border-radius: 8px;
+    color: #fff;
+    font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer
+  }
+
+  .site-header .header-nav {
+    display: none;
+    position: absolute;
+    z-index: 30;
+    top: 72px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 14px clamp(24px, 4.583333vw, 88px) 22px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: #66313a;
+    box-shadow: 0 12px 18px rgba(29, 12, 15, .18);
+    font-size: 26px
+  }
+
+  .site-header .header-menu-toggle:checked~.header-nav {
+    display: flex
+  }
+
+  .site-header .header-nav a {
+    padding: 9px 0;
+    border-top: 1px solid rgba(255, 255, 255, .14)
+  }
+
+  .site-header .header-cta {
+    margin-left: 14px
+  }
+}
+
+@media(max-width:560px) {
+  .site-header {
+    height: 64px;
+    padding: 0 16px
+  }
+
+  .site-header .brand {
+    flex-basis: 88px;
+    width: 88px;
+    height: 46px
+  }
+
+  .site-header .header-menu-label {
+    margin-left: auto;
+    padding: 7px 9px;
+    font-size: 17px
+  }
+
+  .site-header .header-nav {
+    top: 64px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 23px
+  }
+
+  .site-header .header-cta {
+    width: 136px;
+    height: 38px;
+    flex-basis: 136px;
+    margin-left: 10px;
+    padding: 4px 8px;
+    gap: 6px;
+    font-size: 17px
+  }
+
+  .site-header .header-cta img {
+    width: 22px;
+    height: 22px;
+    flex-basis: 22px
+  }
+}
+
+header {
+  height: 60px !important;
+  min-height: 60px !important;
+  max-height: 60px !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+header .logo img,
+header img.logo,
+header .header-logo {
+  width: auto !important;
+  height: 45px !important;
+  max-height: 45px !important;
+  object-fit: contain;
+}
+
+.site-header nav a {
+  font-family: "DB Heavent", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.site-header .header-cta {
+  font-family: "DB Heavent", sans-serif !important;
+  font-size: 23px !important;
+  font-weight: 500 !important;
+}
