@@ -699,6 +699,9 @@
     background-size: cover !important;
     background-repeat: no-repeat !important;
 
+    aspect-ratio: auto !important;
+    height: 520px !important;
+
     text-align: center !important;
   }
 
@@ -743,5 +746,24 @@
 
   section.hero .hero-image {
     height: 520px !important;
+  }
+}
+
+/* MOBILE QUOTE CARD FINAL SIZE */
+@media screen and (max-width: 767px) {
+  .quote-card {
+    height: 520px !important;
+    min-height: 0 !important;
+    aspect-ratio: auto !important;
+  }
+}
+
+/* MOBILE EXPERT BANNER */
+@media screen and (max-width: 767px) {
+  .expert-banner-image {
+    content: url("assets/expert-mobile.png") !important;
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
   }
 }
