@@ -610,8 +610,11 @@
   }
 }
 
-@media (min-width: 1700px) {
-  .hero-copy {
-    transform: translateY(35px) !important;
+/* Mobile Hero Image */
+@media (max-width: 767px) {
+  .hero-image {
+    background-image: url("backup-original/assets/hero-mobile-new.png") !important;
+    background-position: center center !important;
+    background-size: cover !important;
   }
 }
