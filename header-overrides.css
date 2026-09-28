@@ -375,3 +375,43 @@ header .header-logo {
     margin: 0 !important;
   }
 }
+
+/* FIX MOBILE PHONE ICON */
+@media screen and (max-width: 767px) {
+  .site-header .header-cta {
+    width: 160px !important;
+    flex: 0 0 160px !important;
+    height: 40px !important;
+    padding: 0 12px !important;
+
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 7px !important;
+
+    font-size: 16px !important;
+    line-height: 40px !important;
+    white-space: nowrap !important;
+  }
+
+  .site-header .header-cta img {
+    position: static !important;
+    width: 19px !important;
+    height: 19px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    transform: none !important;
+    flex: 0 0 19px !important;
+  }
+
+  .site-header .header-cta span {
+    position: static !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    height: 40px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1 !important;
+    transform: none !important;
+  }
+}
