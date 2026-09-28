@@ -631,7 +631,7 @@
 
 @media screen and (max-width: 767px) {
   section.hero .hero-copy h1 {
-    font-size: clamp(24px, 6vw, 28px) !important;
+    font-size: clamp(28px, 7vw, 32px) !important;
     line-height: 1.05 !important;
     text-align: center !important;
   }
@@ -656,13 +656,101 @@
 
   /* ขยายหัวข้อ */
   section.hero .hero-copy h1 {
-    font-size: clamp(26px, 7vw, 32px) !important;
-    line-height: 1.05 !important;
+    font-size: clamp(50px, 8vw, 50px) !important;
+    line-height: 1.2 !important;
   }
 }
 
 @media screen and (max-width: 767px) {
   section.hero .text-link {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.hero .hero-copy h1 em {
+    color: transparent !important;
+    background: linear-gradient(90deg, #af666f, #d08d95) !important;
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+
+    font-family: "Playfair Display", Georgia, serif !important;
+    font-size: inherit !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    white-space: nowrap !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote-card {
+    background-image: url("assets/quote-mobile.png") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .quote-card {
+    background-image: url("assets/quote-mobile.png") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    text-align: center !important;
+  }
+
+  .quote-card .quote-content {
+    width: 100% !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* จัดเนื้อหากล่อง Quote ให้อยู่กลาง */
+  .quote-card .quote-copy {
+    text-align: center !important;
+  }
+
+  /* หัวข้อ เช็กเบี้ยประกัน Supercar */
+  .quote-card .quote-copy h2 {
+    font-size: 40px !important;
+    line-height: 1.15 !important;
+    text-align: center !important;
+  }
+
+  /* ข้อความใต้หัวข้อ */
+  .quote-card .quote-description {
+    font-size: 26px !important;
+    line-height: 1.45 !important;
+    text-align: center !important;
+  }
+
+  /* ข้อความใต้ไอคอน 3 อัน */
+  .quote-card .quote-benefit-label {
+    font-size: 22px !important;
+    line-height: 1.2 !important;
+  }
+
+  /* ขยายตัวหนังสือปุ่มกรอกแบบฟอร์ม */
+  .quote-card .quote-form-button {
+    font-size: 30px !important;
+  }
+
+  /* เส้นคั่นระหว่างไอคอน Mobile */
+  .quote-card .quote-benefit-divider {
+    display: block !important;
+    width: 1px !important;
+    height: 45px !important;
+    background: #C98A91 !important;
+    flex: 0 0 1px !important;
+  }
+
+  .quote-card .quote-benefit-divider img {
     display: none !important;
   }
 }
