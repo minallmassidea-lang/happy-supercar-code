@@ -600,6 +600,7 @@
 
   .features .section-kicker {
     font-size: 30px;
+    margin-bottom: 10px;
   }
 
   .feature-grid {
@@ -770,4 +771,21 @@
     height: auto !important;
     display: block !important;
   }
+}
+
+/* SERVICE CARD NEW IMAGES */
+.features .feature-a {
+  background-image: url("assets/service-supercar.webp") !important;
+}
+
+.features .feature-b {
+  background-image: url("assets/service-renewal.webp") !important;
+}
+
+.features .feature-c {
+  background-image: url("assets/service-claim.webp") !important;
+}
+
+.features .feature-d {
+  background-image: url("assets/service-special.webp") !important;
 }
