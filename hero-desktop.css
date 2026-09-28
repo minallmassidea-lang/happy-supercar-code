@@ -656,7 +656,7 @@
 
   /* ขยายหัวข้อ */
   section.hero .hero-copy h1 {
-    font-size: clamp(28px, 8vw, 36px) !important;
+    font-size: clamp(40px, 8vw, 45px) !important;
     line-height: 1.2 !important;
   }
 }
