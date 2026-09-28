@@ -523,7 +523,7 @@
     margin: 0;
     color: #251d1d;
     font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
-    font-size: clamp(36px, 6vw, 52px);
+    font-size: clamp(30px, 5vw, 40px);
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0;
@@ -735,6 +735,10 @@
 
   .quote-card .quote-form-button {
     font-size: 20px !important;
+    width: 78% !important;
+    max-width: 280px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
