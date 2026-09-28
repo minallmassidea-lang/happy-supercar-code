@@ -264,3 +264,55 @@ header .header-logo {
   font-size: 23px !important;
   font-weight: 500 !important;
 }
+
+@media screen and (max-width: 767px) {
+  section.hero .hero-image {
+    filter: none !important;
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-menu-label {
+    font-size: 28px !important;
+    line-height: 1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-header .header-menu-label {
+    order: initial !important;
+  }
+
+  .site-header .header-cta {
+    order: initial !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-header .header-menu-label {
+    order: 2 !important;
+  }
+
+  .site-header .header-cta {
+    order: 1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-header .header-cta {
+    margin-left: auto !important;
+  }
+
+  .site-header .header-menu-label {
+    margin-left: 10px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .site-header .header-cta {
+    width: 170px !important;
+    flex: 0 0 170px !important;
+    height: 43px !important;
+  }
+}

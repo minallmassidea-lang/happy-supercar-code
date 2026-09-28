@@ -613,8 +613,56 @@
 /* Mobile Hero Image */
 @media (max-width: 767px) {
   .hero-image {
-    background-image: url("backup-original/assets/hero-mobile-new.png") !important;
+    background-image: url("backup-original/assets/hero-mobile-portrait.png") !important;
     background-position: center center !important;
     background-size: cover !important;
+  }
+}
+
+/* MOBILE HERO - FORCE NEW IMAGE */
+@media screen and (max-width: 767px) {
+  section.hero .hero-image {
+    background-image: url("backup-original/assets/hero-mobile-portrait.png") !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.hero .hero-copy h1 {
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+    text-align: center !important;
+  }
+
+  section.hero .hero-copy {
+    width: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 0 24px !important;
+    top: 90px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  /* เอา fade / overlay บนรูปออก */
+  section.hero .hero-image::after {
+    display: none !important;
+    background: none !important;
+    opacity: 0 !important;
+  }
+
+  /* ขยายหัวข้อ */
+  section.hero .hero-copy h1 {
+    font-size: 55px !important;
+    line-height: 1.05 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section.hero .text-link {
+    display: none !important;
   }
 }
