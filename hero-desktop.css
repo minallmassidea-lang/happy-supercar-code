@@ -737,11 +737,11 @@
 
 @media screen and (max-width: 767px) {
   section.hero {
-    height: 600px !important;
-    min-height: 600px !important;
+    height: 520px !important;
+    min-height: 520px !important;
   }
 
   section.hero .hero-image {
-    height: 600px !important;
+    height: 520px !important;
   }
 }
