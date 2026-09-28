@@ -711,46 +711,26 @@
 
 @media screen and (max-width: 767px) {
 
-  /* จัดเนื้อหากล่อง Quote ให้อยู่กลาง */
   .quote-card .quote-copy {
     text-align: center !important;
   }
 
-  /* หัวข้อ เช็กเบี้ยประกัน Supercar */
   .quote-card .quote-copy h2 {
-    font-size: 40px !important;
+    font-size: 28px !important;
     line-height: 1.15 !important;
-    text-align: center !important;
   }
 
-  /* ข้อความใต้หัวข้อ */
   .quote-card .quote-description {
-    font-size: 26px !important;
+    font-size: 17px !important;
     line-height: 1.45 !important;
-    text-align: center !important;
   }
 
-  /* ข้อความใต้ไอคอน 3 อัน */
   .quote-card .quote-benefit-label {
-    font-size: 22px !important;
+    font-size: 13px !important;
     line-height: 1.2 !important;
   }
 
-  /* ขยายตัวหนังสือปุ่มกรอกแบบฟอร์ม */
   .quote-card .quote-form-button {
-    font-size: 30px !important;
-  }
-
-  /* เส้นคั่นระหว่างไอคอน Mobile */
-  .quote-card .quote-benefit-divider {
-    display: block !important;
-    width: 1px !important;
-    height: 45px !important;
-    background: #C98A91 !important;
-    flex: 0 0 1px !important;
-  }
-
-  .quote-card .quote-benefit-divider img {
-    display: none !important;
+    font-size: 20px !important;
   }
 }
