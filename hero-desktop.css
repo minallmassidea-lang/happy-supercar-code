@@ -631,8 +631,8 @@
 
 @media screen and (max-width: 767px) {
   section.hero .hero-copy h1 {
-    font-size: clamp(28px, 7vw, 32px) !important;
-    line-height: 1.05 !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
+    line-height: 1.12 !important;
     text-align: center !important;
   }
 
@@ -656,7 +656,7 @@
 
   /* ขยายหัวข้อ */
   section.hero .hero-copy h1 {
-    font-size: clamp(50px, 8vw, 50px) !important;
+    font-size: clamp(28px, 8vw, 36px) !important;
     line-height: 1.2 !important;
   }
 }
