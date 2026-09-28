@@ -341,3 +341,20 @@ header .header-logo {
     font-size: 24px !important;
   }
 }
+
+/* FIX MOBILE PHONE ICON */
+@media screen and (max-width: 767px) {
+  .site-header .header-cta {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+  }
+
+  .site-header .header-cta img {
+    position: static !important;
+    transform: none !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+  }
+}
