@@ -631,7 +631,7 @@
 
 @media screen and (max-width: 767px) {
   section.hero .hero-copy h1 {
-    font-size: clamp(26px, 7vw, 32px) !important;
+    font-size: clamp(24px, 6vw, 28px) !important;
     line-height: 1.05 !important;
     text-align: center !important;
   }
