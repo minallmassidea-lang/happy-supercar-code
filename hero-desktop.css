@@ -789,3 +789,85 @@
 .features .feature-d {
   background-image: url("assets/service-special.webp") !important;
 }
+
+/* GALLERY - FIGMA LAYOUT */
+@media screen and (min-width: 768px) {
+  .gallery-section .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-auto-rows: 180px !important;
+    gap: 36px 52px !important;
+    align-items: stretch !important;
+  }
+
+  .gallery-section .gallery button {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 34px !important;
+  }
+
+  .gallery-section .gallery button img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* ซ้าย - สูง */
+  .gallery-section .gallery button:nth-child(6n + 1) {
+    grid-row: span 2 !important;
+  }
+
+  /* กลางแถวถัดมา - สูง */
+  .gallery-section .gallery button:nth-child(6n + 5) {
+    grid-row: span 2 !important;
+  }
+
+  /* ขวาแถวถัดมา - สูง */
+  .gallery-section .gallery button:nth-child(6n + 6) {
+    grid-row: span 2 !important;
+  }
+}
+
+/* GALLERY - MOBILE FIGMA LAYOUT */
+@media screen and (max-width: 767px) {
+  .gallery-section .gallery {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-auto-rows: 88px !important;
+    gap: 12px !important;
+  }
+
+  .gallery-section .gallery button {
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border-radius: 14px !important;
+  }
+
+  .gallery-section .gallery button img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+  .gallery-section .gallery button:nth-child(6n + 1),
+  .gallery-section .gallery button:nth-child(6n + 5),
+  .gallery-section .gallery button:nth-child(6n + 6) {
+    grid-row: span 2 !important;
+  }
+}
+
+/* MOBILE GALLERY HEIGHT FIX */
+@media screen and (max-width: 767px) {
+  .gallery-section .gallery {
+    grid-auto-rows: 80px !important;
+  }
+
+  .gallery-section .gallery button {
+    min-height: 0 !important;
+  }
+}
