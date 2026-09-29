@@ -966,7 +966,7 @@
 
 @media screen and (max-width: 767px) {
   .fleet-points {
-    top: 40% !important;
+    top: 35% !important;
     left: 8% !important;
     right: 8% !important;
     grid-template-columns: 1fr 1fr 1fr !important;
