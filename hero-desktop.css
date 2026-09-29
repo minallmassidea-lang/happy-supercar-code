@@ -966,7 +966,7 @@
 
 @media screen and (max-width: 767px) {
   .fleet-points {
-    top: 32% !important;
+    top: 25% !important;
     left: 3% !important;
     right: 3% !important;
     grid-template-columns: 1fr 1fr 1fr !important;
@@ -975,5 +975,8 @@
 
   .fleet-points li {
     padding: 0 4px !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 }
