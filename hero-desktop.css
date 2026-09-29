@@ -966,10 +966,14 @@
 
 @media screen and (max-width: 767px) {
   .fleet-points {
-    top: 35% !important;
-    left: 8% !important;
-    right: 8% !important;
+    top: 32% !important;
+    left: 3% !important;
+    right: 3% !important;
     grid-template-columns: 1fr 1fr 1fr !important;
-    column-gap: 16px !important;
+    column-gap: 4px !important;
+  }
+
+  .fleet-points li {
+    padding: 0 4px !important;
   }
 }
