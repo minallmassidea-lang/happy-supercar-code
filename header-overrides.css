@@ -415,3 +415,9 @@ header .header-logo {
     transform: none !important;
   }
 }
+
+@media screen and (max-width: 767px) {
+  body .gallery-section {
+    display: none !important;
+  }
+}

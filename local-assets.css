@@ -23,7 +23,7 @@
 }
 
 .fleet {
-  background-image: url("assets/fleet-new.png");
+  background-image: url("assets/fleet.png");
 }
 
 .fleet-content {
@@ -67,22 +67,24 @@
 
 .fleet-points {
   position: absolute;
-  right: 4%;
+  right: 18%;
   top: 30%;
-  left: 7%;
+  left: 18%;
   display: grid;
-  grid-template-columns: 1.30fr .40fr 1.30fr;
+  grid-template-columns: 1fr 0.5fr 1fr;
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 .fleet-points li {
   display: flex;
-  min-height: 70px;
+  min-height: 45px;
   align-items: center;
   justify-content: center;
-  padding: 0 24px;
+  padding: 0 12px;
+  text-align: center;
   font-family: "DB Heavent", "Noto Sans Thai", sans-serif;
   font-size: clamp(18px, 1.35vw, 26px);
   font-weight: 400;
@@ -90,7 +92,19 @@
 }
 
 .fleet-points li+li {
-  border-left: 1px solid rgba(247, 226, 174, .9);
+  border-left: none;
+  position: relative;
+}
+
+.fleet-points li+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 45px;
+  background: rgba(247, 226, 174, .9);
 }
 
 .fleet-points li:first-child {
@@ -381,7 +395,7 @@
   .fleet-points {
     right: 3%;
     top: auto;
-    bottom: 24%;
+    bottom: 40%;
     left: 3%;
   }
 
@@ -975,7 +989,7 @@
     margin: 0 14px 24px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-auto-rows: 160px;
+    grid-auto-rows: 140px;
     gap: 12px;
   }
 
@@ -986,15 +1000,6 @@
     width: 100%;
     height: 100%;
     border-radius: 12px;
-  }
-
-  .gallery-dialog-image:nth-child(1),
-  .gallery-dialog-image:nth-child(4),
-  .gallery-dialog-image:nth-child(6),
-  .gallery-dialog-image:nth-child(9),
-  .gallery-dialog-image:nth-child(11),
-  .gallery-dialog-image:nth-child(14) {
-    grid-row: span 2;
   }
 
   .gallery-dialog-image:nth-child(8) img,
@@ -1389,5 +1394,18 @@ footer.site-footer .footer-legal span {
   footer.site-footer .footer-legal {
     column-gap: 8px;
     row-gap: 4px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fleet {
+    background-image: url("assets/review-mobile-new.png") !important;
+  }
+}
+
+/* DESKTOP FLEET IMAGE ONLY */
+@media screen and (min-width: 768px) {
+  .fleet {
+    background-image: url("assets/fleet-desktop-new.png") !important;
   }
 }

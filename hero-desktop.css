@@ -923,3 +923,52 @@
     justify-content: center !important;
   }
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .gallery-section {
+    display: none !important;
+  }
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .review.section .review-stack {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .review.section .review-card {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fleet {
+    background-repeat: no-repeat !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .fleet {
+    height: 580px !important;
+    min-height: 580px !important;
+
+    .fleet-points {
+      top: 32% !important;
+    }
+  }
+}
