@@ -347,7 +347,7 @@
 
   .review-card p {
     font-size: clamp(8px, 2vw, 11px);
-  line-height: 1.15;
+    line-height: 1.15;
   }
 }
 
@@ -1027,7 +1027,7 @@
   color: #bf6c80;
 }
 
-.coverage .section-heading > p:last-child {
+.coverage .section-heading>p:last-child {
   margin: 3px 0 0;
   color: #302d2e;
   font-size: 18px;
@@ -1083,12 +1083,12 @@
   object-fit: contain;
 }
 
-.coverage .coverage-grid > .coverage-card:nth-child(3) {
+.coverage .coverage-grid>.coverage-card:nth-child(3) {
   --coverage-icon-size: 56px;
 }
 
-.coverage .coverage-grid > .coverage-card:nth-child(3) .coverage-icon,
-.coverage .coverage-grid > .coverage-card:nth-child(3) .coverage-label {
+.coverage .coverage-grid>.coverage-card:nth-child(3) .coverage-icon,
+.coverage .coverage-grid>.coverage-card:nth-child(3) .coverage-label {
   transform: translateY(-6px);
 }
 
@@ -1144,7 +1144,7 @@
     font-size: 30px;
   }
 
-  .coverage .section-heading > p:last-child {
+  .coverage .section-heading>p:last-child {
     font-size: 15px;
   }
 
@@ -1166,7 +1166,7 @@
     height: var(--coverage-icon-size, 40px);
   }
 
-  .coverage .coverage-grid > .coverage-card:nth-child(3) {
+  .coverage .coverage-grid>.coverage-card:nth-child(3) {
     --coverage-icon-size: 46px;
   }
 
@@ -1206,7 +1206,7 @@
   color: inherit;
 }
 
-.faq-contact > p:not(.section-kicker) {
+.faq-contact>p:not(.section-kicker) {
   margin: 14px 0 0;
   color: #5f6061;
   font-size: 16px;

@@ -881,7 +881,7 @@
 
     width: 220px !important;
     height: 50px !important;
-    font-size: 24px !important;
+    font-size: 20px !important;
 
     margin: 0 auto !important;
 
@@ -902,7 +902,7 @@
 
   width: 220px !important;
   height: 50px !important;
-  font-size: 24px !important;
+  font-size: 20px !important;
 
   margin: -60px auto 0 !important;
 
@@ -912,4 +912,15 @@
   transform: none !important;
   z-index: 5 !important;
 }
+
+@media screen and (min-width: 1600px) {
+  .faq.section {
+    max-width: 1500px !important;
+    grid-template-columns: 500px 600px !important;
+    gap: 160px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+  }
 }
