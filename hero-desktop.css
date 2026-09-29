@@ -427,13 +427,13 @@
 
 @media (min-width: 1200px) {
   .features .feature-a {
-    background-position: right center;
-    background-size: 106.2% auto;
+    background-position: center;
+    background-size: 100% auto;
   }
 
   .features .feature-c {
-    background-position: right center;
-    background-size: 115.6% auto;
+    background-position: center;
+    background-size: 100% auto;
   }
 }
 
@@ -773,21 +773,20 @@
   }
 }
 
-/* SERVICE CARD NEW IMAGES */
 .features .feature-a {
-  background-image: url("assets/service-supercar.webp") !important;
+  background-image: url("assets/service-insurance_4_11zon.webp") !important;
 }
 
 .features .feature-b {
-  background-image: url("assets/service-renewal.webp") !important;
+  background-image: url("assets/service-renew_3_11zon.webp") !important;
 }
 
 .features .feature-c {
-  background-image: url("assets/service-claim.webp") !important;
+  background-image: url("assets/service-claim_2_11zon.webp") !important;
 }
 
 .features .feature-d {
-  background-image: url("assets/service-special.webp") !important;
+  background-image: url("assets/service-special_1_11zon.webp") !important;
 }
 
 /* GALLERY - FIGMA LAYOUT */
