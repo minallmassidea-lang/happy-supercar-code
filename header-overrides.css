@@ -678,3 +678,31 @@ header .header-logo {
     flex-shrink: 0 !important;
   }
 }
+
+
+@media screen and (max-width: 767px) {
+  .mobile-menu-actions {
+    grid-template-columns: 44% 56% !important;
+    gap: 8px !important;
+  }
+
+  .mobile-menu-phone span {
+    font-size: 13px !important;
+  }
+
+  .mobile-menu-line span {
+    font-size: 12px !important;
+  }
+
+  .mobile-menu-phone,
+  .mobile-menu-line {
+    padding: 0 8px !important;
+    min-width: 0 !important;
+  }
+
+  .mobile-menu-phone img,
+  .mobile-menu-line img {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
