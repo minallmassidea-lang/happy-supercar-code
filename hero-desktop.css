@@ -959,12 +959,14 @@
 @media screen and (max-width: 767px) {
   .fleet {
     background-repeat: no-repeat !important;
+    height: 600px !important;
+    min-height: 600px !important;
   }
 }
 
 @media screen and (max-width: 767px) {
   .fleet-points {
-    top: 32% !important;
+    top: 40% !important;
     left: 8% !important;
     right: 8% !important;
     grid-template-columns: 1fr 1fr 1fr !important;
