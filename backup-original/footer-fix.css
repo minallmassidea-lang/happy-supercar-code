@@ -140,7 +140,7 @@
     /* MOBILE CTA - SHOW ALL 3 */
     .floating-actions {
         display: flex !important;
-        right: 4px !important;
+        right: 7px !important;
     }
 
     .floating-actions a {

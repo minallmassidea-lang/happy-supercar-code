@@ -647,3 +647,34 @@ header .header-logo {
     display: none !important;
   }
 }
+
+/* MOBILE MENU ACTIONS - FIT SCREEN */
+@media screen and (max-width: 767px) {
+  .mobile-menu-actions {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  .mobile-menu-phone,
+  .mobile-menu-line {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    padding: 0 10px !important;
+  }
+
+  .mobile-menu-phone span,
+  .mobile-menu-line span {
+    font-size: 14px !important;
+    white-space: nowrap !important;
+  }
+
+  .mobile-menu-phone img,
+  .mobile-menu-line img {
+    width: 22px !important;
+    height: 22px !important;
+    flex-shrink: 0 !important;
+  }
+}
