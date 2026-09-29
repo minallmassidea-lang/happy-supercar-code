@@ -136,4 +136,43 @@
         color: #fff !important;
         white-space: normal !important;
     }
+
+    /* MOBILE CTA - SHOW ALL 3 */
+    .floating-actions {
+        display: flex !important;
+        right: 4px !important;
+    }
+
+    .floating-actions a {
+        display: flex !important;
+    }
+
+    .floating-actions a:first-child {
+        display: flex !important;
+    }
+
+    /* จัดไอคอน CTA ให้อยู่กลางวง */
+    .floating-actions a {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    .floating-actions a img {
+        width: 24px !important;
+        height: 24px !important;
+        margin: 0 !important;
+        transform: none !important;
+    }
+
+    /* LINE ใหญ่ขึ้นนิด เพราะตัว SVG เล็กกว่าเพื่อน */
+    .floating-actions a:first-child img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    /* ยกเลิกค่าที่เคยเลื่อนไอคอนอันสุดท้าย */
+    .floating-actions a:last-child img {
+        transform: none !important;
+    }
 }
