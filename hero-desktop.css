@@ -963,12 +963,11 @@
 }
 
 @media screen and (max-width: 767px) {
-  .fleet {
-    height: 580px !important;
-    min-height: 580px !important;
-
-    .fleet-points {
-      top: 32% !important;
-    }
+  .fleet-points {
+    top: 32% !important;
+    left: 8% !important;
+    right: 8% !important;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    column-gap: 16px !important;
   }
 }
