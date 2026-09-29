@@ -706,3 +706,13 @@ header .header-logo {
     height: 20px !important;
   }
 }
+
+/* MOBILE MENU - DB HEAVEN */
+@media screen and (max-width: 767px) {
+
+  .site-header .header-nav a,
+  .site-header .mobile-menu-actions a,
+  .site-header .mobile-menu-actions span {
+    font-family: "DB Heaven", "Noto Sans Thai", sans-serif !important;
+  }
+}

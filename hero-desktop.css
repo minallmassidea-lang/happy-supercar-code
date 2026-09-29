@@ -1073,3 +1073,48 @@
     line-height: 1.2 !important;
   }
 }
+
+/* MINI BANNER BEFORE FOOTER - DESKTOP ONLY */
+.property-insurance-desktop {
+  width: min(1000px, 65%);
+  margin: -30px auto 50px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 24px;
+
+  box-shadow: 0 8px 24px rgba(80, 45, 45, 0.10);
+}
+
+.property-insurance-desktop img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .property-insurance-desktop {
+    display: none !important;
+  }
+}
+
+/* PROPERTY INSURANCE - MOBILE */
+.property-insurance-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .property-insurance-mobile {
+    display: block;
+    width: 90%;
+    margin: 20px auto 40px;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(80, 45, 45, 0.10);
+  }
+
+  .property-insurance-mobile img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
