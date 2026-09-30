@@ -1131,3 +1131,8 @@
     transform: translateY(45px);
   }
 }
+
+/* HIDE FLOATING FORM CTA */
+.floating-actions a.floating-form-cta {
+  display: none !important;
+}
