@@ -1118,3 +1118,16 @@
     height: auto;
   }
 }
+
+
+
+.quote-form-button {
+  display: none !important;
+}
+
+/* CENTER QUOTE CONTENT AFTER HIDE BUTTON */
+@media screen and (min-width: 768px) {
+  .quote-card .quote-copy {
+    transform: translateY(45px);
+  }
+}
