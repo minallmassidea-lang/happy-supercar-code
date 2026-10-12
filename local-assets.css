@@ -1399,13 +1399,13 @@ footer.site-footer .footer-legal span {
 
 @media screen and (max-width: 767px) {
   .fleet {
-    background-image: url("assets/review-mobile-new.png") !important;
+    background-image: url("assets/review-mobile-new.webp") !important;
   }
 }
 
 /* DESKTOP FLEET IMAGE ONLY */
 @media screen and (min-width: 768px) {
   .fleet {
-    background-image: url("assets/fleet-desktop-new.png") !important;
+    background-image: url("assets/fleet-desktop-new.webp") !important;
   }
 }

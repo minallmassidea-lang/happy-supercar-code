@@ -1,7 +1,7 @@
 const galleryImages = [
-  'assets/gallery-01.png?v=hires-1', 'assets/gallery-05.png?v=hires-1', 'assets/gallery-09.png?v=hires-1', 'assets/gallery-04.png?v=hires-1', 'assets/gallery-10.png?v=hires-1',
-  'assets/gallery-02.png?v=hires-1', 'assets/gallery-08.png?v=hires-1', 'assets/gallery-03.png?v=hires-1', 'assets/gallery-06.png?v=hires-1', 'assets/gallery-07.png?v=hires-1',
-  'assets/gallery-01.png?v=hires-1', 'assets/gallery-05.png?v=hires-1', 'assets/gallery-09.png?v=hires-1', 'assets/gallery-04.png?v=hires-1', 'assets/gallery-10.png?v=hires-1'
+  'assets/gallery-01.webp', 'assets/gallery-05.webp', 'assets/gallery-09.webp', 'assets/gallery-04.webp', 'assets/gallery-10.webp',
+  'assets/gallery-02.webp', 'assets/gallery-08.webp', 'assets/gallery-03.webp', 'assets/gallery-06.webp', 'assets/gallery-07.webp',
+  'assets/gallery-01.webp', 'assets/gallery-05.webp', 'assets/gallery-09.webp', 'assets/gallery-04.webp', 'assets/gallery-10.webp'
 ];
 
 const faqItems = [
@@ -44,9 +44,9 @@ lightbox.addEventListener('click', event => { if (event.target === lightbox) lig
 const galleryDialog = document.querySelector('#gallery-dialog');
 const galleryDialogGrid = document.querySelector('#gallery-dialog-grid');
 const galleryDialogImages = [
-  'assets/gallery-01.webp?v=hires-1', 'assets/gallery-05.png?v=hires-1', 'assets/gallery-09.png?v=hires-1', 'assets/gallery-04.png?v=hires-1', 'assets/gallery-10.png?v=hires-1',
-  'assets/gallery-06.png?v=hires-1', 'assets/gallery-02.png?v=hires-1', 'assets/gallery-08.png?v=hires-1', 'assets/gallery-07.png?v=hires-1', 'assets/gallery-03.png?v=hires-1',
-  'assets/gallery-01.png?v=hires-1', 'assets/gallery-05.png?v=hires-1', 'assets/gallery-09.png?v=hires-1', 'assets/gallery-04.png?v=hires-1', 'assets/gallery-10.png?v=hires-1'
+  'assets/gallery-01.webp', 'assets/gallery-05.webp', 'assets/gallery-09.webp', 'assets/gallery-04.webp', 'assets/gallery-10.webp',
+  'assets/gallery-06.webp', 'assets/gallery-02.webp', 'assets/gallery-08.webp', 'assets/gallery-07.webp', 'assets/gallery-03.webp',
+  'assets/gallery-01.webp', 'assets/gallery-05.webp', 'assets/gallery-09.webp', 'assets/gallery-04.webp', 'assets/gallery-10.webp'
 ];
 
 galleryDialogImages.forEach((src, index) => {
